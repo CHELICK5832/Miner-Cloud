@@ -1,0 +1,39 @@
+Make(delphi)
+ver(4.05 build 186)
+Add(SimpleForm,2953706,91,21)
+{
+}
+Add(Edit,15775987,91,105)
+{
+ Left=140
+ Top=50
+ link(onEnter,16498556:doEvent1,[(131,118)(131,104)])
+}
+Add(Label,3014083,91,70)
+{
+ Left=140
+ Top=15
+ Caption="Miner app"
+}
+Add(Label,1925753,91,196)
+{
+ Left=140
+ Top=125
+ Caption="0"
+}
+Add(Label,6058813,91,154)
+{
+ Left=130
+ Top=90
+ Width=70
+ Caption="Намайнено:"
+}
+Add(Message,4156162,168,140)
+{
+ Message="Намайнено!"
+}
+Add(Hub,16498556,140,98)
+{
+ link(onEvent1,4156162:doMessage,[(158,104)(158,146)])
+ link(onEvent2,1925753:doText,[(166,111)(166,157)(79,157)(79,202)])
+}
